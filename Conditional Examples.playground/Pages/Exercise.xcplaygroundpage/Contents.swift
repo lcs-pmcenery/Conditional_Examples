@@ -21,11 +21,18 @@ let canvas = Canvas(width: 400, height: 300)
  Fill in the blanks below the comments
  */
 // Loop 4 times, counting up by 100, from 0
-
-// Inside the loop, generate a random number (1 or 2)
-
-// Draw a square at the current position – black fill, white text when random number is one, otherwise, colours are inverted
-
+for x in stride(from: 0, through: 300, by: 100) {
+    
+    // Inside the loop, generate a random number (1 or 2)
+    let randomValue = random(from: 0, toButNotIncluding: 2)
+    
+    // Draw a square at the current position – black fill, white text when random number is one, otherwise, colours are inverted
+   
+    canvas.drawRectangle(bottomLeftX: x, bottomLeftY: 100, width: 100, height: 100)
+    
+    //(fromX: x, fromY: 100, toX: x, toY: 100)
+    
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
